@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Note} from '../Models/Note'
 
 @Component({
   selector: 'app-main',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
+  public notes: Note[]
+  constructor() {
+    this.notes=[]
+    this.notes.push(new Note("Cumpleaños Sergio","El 19 es el cumpleaños de Sergio"));
+   }
 
   ngOnInit(): void {
+    
   }
 
 }
