@@ -3,7 +3,6 @@ import { FormControl } from '@angular/forms';
 import {Note} from '../Models/Note'
 
 
-
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
